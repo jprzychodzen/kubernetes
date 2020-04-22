@@ -64,6 +64,7 @@
 set -o errexit
 set -o nounset
 set -o pipefail
+set -x
 
 # If KUBERNETES_RELEASE_URL is overridden but KUBERNETES_CI_RELEASE_URL is not then set KUBERNETES_CI_RELEASE_URL to KUBERNETES_RELEASE_URL.
 KUBERNETES_CI_RELEASE_URL="${KUBERNETES_CI_RELEASE_URL:-${KUBERNETES_RELEASE_URL:-https://dl.k8s.io/ci}}"
